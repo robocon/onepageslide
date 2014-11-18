@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Rocket Web</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/animation.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- class="col-md-4" -->
+        <div class="main_page">
+            <div class="main_contain">
+                <img src="img/rocket.png" alt="Rocket Web" />
+                <img src="img/page1.png" alt="Rocket Web" />
+                <a href="#" class="btn btn-inverse btn-block login" role="button">Login</a>
+                <a href="#" class="btn btn-inverse btn-block btn-mobile" role="button">Request for account</a>
+                <a href="#" class="btn btn-inverse btn-block btn-mobile" role="button">Blog</a>
+            </div>
+            <div class="register_contain">
+                <a href="#" class="btn btn-desktop btn-register" role="button">Request for account</a>
+            </div>
+            <div class="blog_contain">
+                <a href="#" class="btn btn-desktop btn-blog" role="button">Blog</a>
+            </div>
+        </div>
+
+        <div class="right_page active">
+            <div class="login_contain">
+                <i class="glyphicon glyphicon-remove remove-right" title="Back to main page"></i>
+                <div class="logo text-center">
+                    <img src="img/page2.png" alt="Rocket Web" />
+                </div>
+                <form id="login_form" action="index.html" method="post">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="remember" value="1"> Remember me
+                        </label>
+                        <a href="#" class="forget-link">Forgot password?</a>
+                    </div>
+                    <div class="form-group text-right">
+                        <button type="submit" class="btn btn-login">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="bottom_page"> </div>
+        <div class="left_page"> </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
