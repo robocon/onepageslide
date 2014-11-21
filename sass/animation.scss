@@ -1,68 +1,33 @@
+@mixin set-transition($x, $y, $z){
+    -webkit-transform: translate3d($x, $y, $z);
+    -moz-transform: translate3d($x, $y, $z);
+    -ms-transform: translate3d($x, $y, $z);
+    -o-transform: translate3d($x, $y, $z);
+    transform: translate3d($x, $y, $z);
+}
+
+/* Main page and right page */
 .to-left {
-  /* cubic-bezier(0.25,0.1,0.25,1) */
-  -webkit-animation: to-left 800ms ease-in-out;
-  animation: to-left 800ms ease-in-out;
+  @include set-transition(-100%, 0, 0);
 }
-/* Chrome, Safari, Opera */
-@-webkit-keyframes to-left {
-    to {
-      -webkit-transform: translate3d(-100%,0,0);
-      transform: translate3d(-100%,0,0);
-    }
-}
-@keyframes to-left {
-    to {
-      -webkit-transform: translate3d(-100%,0,0);
-      transform: translate3d(-100%,0,0);
-    }
-}
-
 .from-left {
-  -webkit-animation: from-left 800ms ease-in-out;
-  animation: from-left 800ms ease-in-out;
+  @include set-transition(0, 0%, 0);
 }
-@-webkit-keyframes from-left {
-    from {
-      -webkit-transform: translate3d(-100%,0,0);
-      transform: translate3d(-100%,0,0);
-    }
-}
-@keyframes from-left {
-    from {
-      -webkit-transform: translate3d(-100%,0,0);
-      transform: translate3d(-100%,0,0);
-    }
-}
-
 .to-right {
-  -webkit-animation: to-right 800ms ease-in-out;
-  animation: to-right 800ms ease-in-out;
-}
-@-webkit-keyframes to-right {
-    to {
-      -webkit-transform: translate3d(100%,0,0);
-      transform: translate3d(100%,0,0);
-    }
-}
-@keyframes to-right {
-    to {
-      -webkit-transform: translate3d(100%,0,0);
-      transform: translate3d(100%,0,0);
-    }
+  @include set-transition(100%, 0, 0);
 }
 .from-right {
-  -webkit-animation: from-right 800ms ease-in-out;
-  animation:from-right 800ms ease-in-out;
+  @include set-transition(0, 0%, 0);
 }
-@-webkit-keyframes from-right {
-    from {
-      -webkit-transform: translate3d(100%,0,0);
-      transform: translate3d(100%,0,0);
-    }
+
+/* Main page and bottom page */
+.to-top{
+    @include set-transition(0, -100%, 0);
 }
-@keyframes from-right {
-    from {
-      -webkit-transform: translate3d(100%,0,0);
-      transform: translate3d(100%,0,0);
-    }
+.to-bottom {
+    @include set-transition(0, 100%, 0);
+}
+.from-bottom,
+.from-top{
+    @include set-transition(0, 0%, 0);
 }
