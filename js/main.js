@@ -36,19 +36,28 @@ $(function(){
         },
         messages: {
             minlength: 'Your password must be at least 4 characters'
+        },
+        submitHandler: function(form) {
+            console.log(form);
         }
     });
 
-    $('#form_id').validate({
+    $('#register_form').validate({
         rules: {
-            some_name: "required",
+            firstname: "required",
+            lastname: "required",
+            regis_email: "required",
+            email_repeat: {
+                equalTo: "#regis_email"
+            },
+        },
+        submitHandler: function(form) {
+            console.log(form);
+            // alert("submitted!");
         }
     });
 });
 
 $.validator.setDefaults({
-	submitHandler: function(form) {
-        console.log(form);
-		// alert("submitted!");
-	}
+
 });

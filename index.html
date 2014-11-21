@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Rocket Web</title>
-        <meta name="description" content="">
+        <meta name="description" content="Website for some testing :)">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <div class="right_page active">
+        <div class="right_page">
             <div class="login_contain">
                 <i class="glyphicon glyphicon-remove remove-right" title="Back to main page"></i>
                 <div class="logo text-center">
@@ -64,7 +64,102 @@
                 </form>
             </div>
         </div>
-        <div class="bottom_page"> </div>
+        <div class="bottom_page active">
+            <div class="bottom_main_contain container">
+                <i class="glyphicon glyphicon-remove remove-bottom" title="Back to main page"></i>
+                <div class="bottom_img">
+                    <img src="img/page2.png" alt="Rocket Web" />
+                </div>
+                <div class="col-md-4 banner">
+                    <img src="img/register-banner.png" />
+                </div>
+                <div class="col-md-1"> </div>
+                <div class="col-md-7 bottom_form">
+                    <form id="register_form" class="form-horizontal register_form" role="form" action="#" method="post">
+                        <fieldset>
+                            <legend>Requirement</legend>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-3 control-label">Firstname</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="firstname" name="firstname">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname" class="col-sm-3 control-label">Lastname</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="lastname" name="lastname">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-sm-3 control-label">Email</label>
+                                <div class="col-sm-7">
+                                    <input type="email" class="form-control" id="regis_email" name="regis_email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-repeat" class="col-sm-3 control-label">Email Repeat</label>
+                                <div class="col-sm-7">
+                                    <input type="email" class="form-control" id="email_repeat" name="email_repeat">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">User Type</label>
+                                <div class="col-sm-7">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="type" value="teacher" checked> Teacher
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="type" value="student"> Student
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="type" value="other"> Other
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Class/Level</label>
+                                <div class="col-sm-7">
+                                    <select class="form-control" name="level">
+                                        <option value="1" selected>Level 1</option>
+                                        <option value="2">Level 2</option>
+                                        <option value="3">Level 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="col-sm-3 control-label">Telephone</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="phone" name="phone">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Refer</legend>
+                            <div class="form-group">
+                                <label for="id" class="col-sm-3 control-label">Email/id</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="id" name="id">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="id" class="col-sm-3 control-label"></label>
+                                <div class="col-sm-7">
+                                    <textarea class="form-control" name="detail" rows="8" cols="40"></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-group text-right">
+                            <div class="col-sm-3">
+
+                            </div>
+                            <div class="col-sm-7">
+                                <button type="submit" class="btn btn-login">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="left_page"> </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
