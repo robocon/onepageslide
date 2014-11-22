@@ -35,12 +35,28 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+@mixin hide-scrollbar{
+    width: 0px;
+    background-color: #ffffff;
+    height: 0px;
+}
+
 html, body{
     height: 100%;
 }
 body{
     overflow: hidden;
     background-color: #f5f5f5;
+}
+::-webkit-scrollbar{
+    @include hide-scrollbar;
+    -webkit-appearance: none;
+}
+::-webkit-scrollbar-button{
+    @include hide-scrollbar;
+}
+::-webkit-scrollbar-track{
+    @include hide-scrollbar;
 }
 .error{
     color: #D53F3C;
