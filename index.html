@@ -21,147 +21,145 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div class="main_layout">
+            <div class="main_page active">
+                <div class="main_contain">
+                    <img src="img/rocket.png" alt="Rocket Web" />
+                    <img src="img/page1.png" alt="Rocket Web" />
+                    <a href="#" class="btn btn-inverse btn-block login" role="button">Login</a>
+                    <a href="#" class="btn btn-inverse btn-block btn-mobile page-register" role="button">Request for account</a>
+                    <a href="#" class="btn btn-inverse btn-block btn-mobile" role="button">Blog</a>
+                </div>
+                <div class="register_contain">
+                    <a href="#" class="btn btn-desktop btn-register page-register" role="button">Request for account</a>
+                </div>
+                <div class="blog_contain">
+                    <a href="#" class="btn btn-desktop btn-blog" role="button">Blog</a>
+                </div>
+            </div>
 
-    <!-- class="col-md-4" -->
-        <div class="main_page active">
-            <div class="main_contain">
-                <img src="img/rocket.png" alt="Rocket Web" />
-                <img src="img/page1.png" alt="Rocket Web" />
-                <a href="#" class="btn btn-inverse btn-block login" role="button">Login</a>
-                <a href="#" class="btn btn-inverse btn-block btn-mobile page-register" role="button">Request for account</a>
-                <a href="#" class="btn btn-inverse btn-block btn-mobile" role="button">Blog</a>
-            </div>
-            <div class="register_contain">
-                <a href="#" class="btn btn-desktop btn-register page-register" role="button">Request for account</a>
-            </div>
-            <div class="blog_contain">
-                <a href="#" class="btn btn-desktop btn-blog" role="button">Blog</a>
-            </div>
-        </div>
-
-        <div class="right_page to-right">
-            <div class="login_contain">
-                <i class="glyphicon glyphicon-remove remove-right" title="Back to main page"></i>
-                <div class="logo text-center">
-                    <img src="img/page2.png" alt="Rocket Web" />
-                </div>
-                <form id="login_form" action="index.html" method="post">
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+            <div class="right_page to-right">
+                <div class="login_contain">
+                    <i class="glyphicon glyphicon-remove remove-right" title="Back to main page"></i>
+                    <div class="logo text-center">
+                        <img src="img/page2.png" alt="Rocket Web" />
                     </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
-                    </div>
-                    <div class="form-group">
-                        <label>
-                            <input type="checkbox" name="remember" value="1"> Remember me
-                        </label>
-                        <a href="#" class="forget-link">Forgot password?</a>
-                    </div>
-                    <div class="form-group text-right">
-                        <button type="submit" class="btn btn-login">Login</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="bottom_page to-bottom">
-            <div class="bottom_main_contain container">
-                <i class="glyphicon glyphicon-remove remove-bottom" title="Back to main page"></i>
-                <div class="bottom_img">
-                    <img src="img/page2.png" alt="Rocket Web" />
-                </div>
-                <div class="col-md-4 banner">
-                    <img src="img/register-banner.png" />
-                </div>
-                <div class="col-md-1"> </div>
-                <div class="col-md-7 bottom_form">
-                    <form id="register_form" class="form-horizontal register_form" role="form" action="#" method="post">
-                        <fieldset>
-                            <legend>Requirement</legend>
-                            <div class="form-group">
-                                <label for="firstname" class="col-sm-3 control-label">Firstname</label>
-                                <div class="col-sm-7">
-                                    <input type="text" class="form-control" id="firstname" name="firstname">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="lastname" class="col-sm-3 control-label">Lastname</label>
-                                <div class="col-sm-7">
-                                    <input type="text" class="form-control" id="lastname" name="lastname">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" class="col-sm-3 control-label">Email</label>
-                                <div class="col-sm-7">
-                                    <input type="email" class="form-control" id="regis_email" name="regis_email">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email-repeat" class="col-sm-3 control-label">Email Repeat</label>
-                                <div class="col-sm-7">
-                                    <input type="email" class="form-control" id="email_repeat" name="email_repeat">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">User Type</label>
-                                <div class="col-sm-7">
-                                    <label class="radio-inline">
-                                        <input type="radio" name="type" value="teacher" checked> Teacher
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="type" value="student"> Student
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="type" value="other"> Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">Class/Level</label>
-                                <div class="col-sm-7">
-                                    <select class="form-control" name="level">
-                                        <option value="1" selected>Level 1</option>
-                                        <option value="2">Level 2</option>
-                                        <option value="3">Level 3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone" class="col-sm-3 control-label">Telephone</label>
-                                <div class="col-sm-7">
-                                    <input type="text" class="form-control" id="phone" name="phone">
-                                </div>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Refer</legend>
-                            <div class="form-group">
-                                <label for="id" class="col-sm-3 control-label">Email/id</label>
-                                <div class="col-sm-7">
-                                    <input type="text" class="form-control" id="id" name="id">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="id" class="col-sm-3 control-label"></label>
-                                <div class="col-sm-7">
-                                    <textarea class="form-control" name="detail" rows="8" cols="40"></textarea>
-                                </div>
-                            </div>
-                        </fieldset>
+                    <form id="login_form" action="index.html" method="post">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="remember" value="1"> Remember me
+                            </label>
+                            <a href="#" class="forget-link">Forgot password?</a>
+                        </div>
                         <div class="form-group text-right">
-                            <div class="col-sm-3">
-
-                            </div>
-                            <div class="col-sm-7">
-                                <button type="submit" class="btn btn-login">Submit</button>
-                            </div>
+                            <button type="submit" class="btn btn-login">Login</button>
                         </div>
                     </form>
                 </div>
             </div>
-        </div>
-        <div class="left_page"> </div>
+            <div class="bottom_page to-bottom">
+                <div class="bottom_main_contain container">
+                    <i class="glyphicon glyphicon-remove remove-bottom" title="Back to main page"></i>
+                    <div class="bottom_img">
+                        <img src="img/page2.png" alt="Rocket Web" />
+                    </div>
+                    <div class="col-md-4 banner">
+                        <img src="img/register-banner.png" />
+                    </div>
+                    <div class="col-md-1"> </div>
+                    <div class="col-md-7 bottom_form">
+                        <form id="register_form" class="form-horizontal register_form" role="form" action="#" method="post">
+                            <fieldset>
+                                <legend>Requirement</legend>
+                                <div class="form-group">
+                                    <label for="firstname" class="col-sm-3 control-label">Firstname</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="firstname" name="firstname">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname" class="col-sm-3 control-label">Lastname</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="lastname" name="lastname">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-3 control-label">Email</label>
+                                    <div class="col-sm-7">
+                                        <input type="email" class="form-control" id="regis_email" name="regis_email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email-repeat" class="col-sm-3 control-label">Email Repeat</label>
+                                    <div class="col-sm-7">
+                                        <input type="email" class="form-control" id="email_repeat" name="email_repeat">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">User Type</label>
+                                    <div class="col-sm-7">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="type" value="teacher" checked> Teacher
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="type" value="student"> Student
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="type" value="other"> Other
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Class/Level</label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" name="level">
+                                            <option value="1" selected>Level 1</option>
+                                            <option value="2">Level 2</option>
+                                            <option value="3">Level 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="col-sm-3 control-label">Telephone</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="phone" name="phone">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Refer</legend>
+                                <div class="form-group">
+                                    <label for="id" class="col-sm-3 control-label">Email/id</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="id" name="id">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="id" class="col-sm-3 control-label"></label>
+                                    <div class="col-sm-7">
+                                        <textarea class="form-control" name="detail" rows="8" cols="40"></textarea>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="form-group text-right">
+                                <div class="col-sm-3">
 
+                                </div>
+                                <div class="col-sm-7">
+                                    <button type="submit" class="btn btn-login">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
